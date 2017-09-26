@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0A4665A61F7A8737002C5D8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4665A51F7A8737002C5D8C /* AppDelegate.swift */; };
-		0A4665A81F7A8737002C5D8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4665A71F7A8737002C5D8C /* ViewController.swift */; };
 		0A4665AB1F7A8737002C5D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4665A91F7A8737002C5D8C /* Main.storyboard */; };
 		0A4665AD1F7A8737002C5D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4665AC1F7A8737002C5D8C /* Assets.xcassets */; };
 		0A4665B01F7A8737002C5D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4665AE1F7A8737002C5D8C /* LaunchScreen.storyboard */; };
+		0A4665B81F7A9098002C5D8C /* MascotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4665B71F7A9098002C5D8C /* MascotViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A4665A21F7A8737002C5D8C /* Three Amigos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Three Amigos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4665A51F7A8737002C5D8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A4665A71F7A8737002C5D8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A4665AA1F7A8737002C5D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A4665AC1F7A8737002C5D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A4665AF1F7A8737002C5D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A4665B11F7A8737002C5D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4665B71F7A9098002C5D8C /* MascotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				0A4665A51F7A8737002C5D8C /* AppDelegate.swift */,
-				0A4665A71F7A8737002C5D8C /* ViewController.swift */,
 				0A4665A91F7A8737002C5D8C /* Main.storyboard */,
 				0A4665AC1F7A8737002C5D8C /* Assets.xcassets */,
 				0A4665AE1F7A8737002C5D8C /* LaunchScreen.storyboard */,
 				0A4665B11F7A8737002C5D8C /* Info.plist */,
+				0A4665B71F7A9098002C5D8C /* MascotViewController.swift */,
 			);
 			path = "Three Amigos";
 			sourceTree = "<group>";
@@ -136,8 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4665A81F7A8737002C5D8C /* ViewController.swift in Sources */,
 				0A4665A61F7A8737002C5D8C /* AppDelegate.swift in Sources */,
+				0A4665B81F7A9098002C5D8C /* MascotViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -276,11 +276,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Three Amigos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AlgonquinCollege.mafe0002.Three-Amigos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,11 +291,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Three Amigos/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AlgonquinCollege.mafe0002.Three-Amigos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
